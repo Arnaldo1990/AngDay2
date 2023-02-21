@@ -1,10 +1,17 @@
-<div class="cars">
+<div class="cars row row-cols-4">
     <div *ngFor="let val of newPropName">
-        <p>{{val.brand}}</p>
-        <p>{{val.model}}</p>
-        <p>{{val.fueltype}}</p>
-        <p>{{val.price}} € per week</p>
+        <div class="card" style="width: 18rem;">
+            <img src="{{val.picture}}" class="card-img-top" alt="{{val.brand}}">
+            <div class="card-body">
+                <p>{{val.brand}}</p>
+                <h5 class="card-title"></h5>
+                <p class="card-text">{{val.brand}}</p>
+                <p class="card-text">{{val.model}}</p>
+                <p class="card-text">{{val.fueltype}}</p>
+                <p class="card-text">{{val.price}} € per week</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
         <hr>
-        <br>
     </div>
 </div>

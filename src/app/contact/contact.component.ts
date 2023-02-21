@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+// customer = new FormControl("");
+
+myForm = new FormGroup({
+  name: new FormControl(''),
+  Carselection: new FormControl(''),
+});
+printingValue(){
+  console.log(this.myForm.value);
+}
 }

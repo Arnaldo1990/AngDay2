@@ -1,1 +1,11 @@
-<p>contact works!</p>
+<form [formGroup]="myForm" (ngSubmit)="printingValue ()">
+
+    <label for="name">Fullname: </label>
+    <input id="name" type="text" formControlName="name">
+    <br><br>
+    <label for="Carselection">Select your Car: </label>
+    <input id="Carselection" type="text" formControlName="Carselection">
+    <br><br>
+    <input type="submit" class="btn btn-warning" value="Rent">
+
+</form>
